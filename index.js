@@ -1,7 +1,14 @@
+require('./mongo')
 const express = require('express') // importando modo http
 const app = express()
 
+//const cors = require('cors')
+
+
+//pp.use(cors())
 app.use(express.json())
+
+
 
 let notes = [
     {
