@@ -1,8 +1,11 @@
 require('./mongo')
 const express = require('express') // importando modo http
 const app = express()
-
 //const cors = require('cors')
+
+const mongoose = require('mongoose')
+const password = require('./password.js')
+const connectionString = `mongodb+srv://David:${password}@cluster0.bfvsu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 
 //pp.use(cors())
